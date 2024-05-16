@@ -25,6 +25,8 @@ h1 {
 
 h4 {
 	margin: 0;
+	font-size: 1em;
+
 }
 
 iframe {
@@ -51,7 +53,7 @@ section {
 }
 
 .contenitore {
-	/* max-width: 54em; */
+	 width: 100%; 
 }
 
 ul {
