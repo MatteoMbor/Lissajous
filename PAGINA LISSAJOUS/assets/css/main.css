@@ -3,7 +3,7 @@
 }
 
 body {
-	background-color: rgb(240, 240, 240); /* white, #FFFFFF */
+	background-color: rgb(26, 26, 26); /* white, #FFFFFF */
 	padding: 2em;
 	margin: 0;
 	font-family: "Inter", sans-serif;
@@ -14,16 +14,19 @@ body {
 }
 
 p {
+	color: white;
 	margin: 0 0 1em 0;
 	max-width: 30em;
 }
 
 h1 {
+	color: white;
 	margin: 0;
 	font-size: 3em;
 }
 
 h4 {
+	color: white;
 	margin: 0;
 	font-size: 1em;
 
@@ -45,10 +48,11 @@ section {
 }
 
 .filetto {
-	border-top: solid 1px black;
+	border-top: solid 1px rgb(255, 255, 255);
 }
 
 .titolo-sezione {
+	color: white;
 	margin-right: 1em;
 }
 
@@ -57,9 +61,12 @@ section {
 }
 
 ul {
+	color: white;
 	margin: 0;
 	padding: 0;
 }
+
+
 
 /* -- breakpoint: schermi piccoli, larghezza massima 500 pixel -- */
 

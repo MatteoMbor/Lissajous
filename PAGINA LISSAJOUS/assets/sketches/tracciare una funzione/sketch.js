@@ -50,7 +50,7 @@ function H(x) {
 
 
 function draw() {
-	background(255)
+	background(26, 26, 26)
 
 	// Disegno assi
 	stroke(200)
@@ -67,19 +67,19 @@ function draw() {
 	strokeWeight(2)
 	
 	// Traccia funzione parametrica (G, H)
-	stroke(255, 128, 0)
+	stroke(118, 252, 255)
 	tracciaFP(G, H, mx, my, res)
 
 	// Traccia funzione G
 	beginShape()
-	stroke(255, 0, 0)
+	stroke(252, 185, 185)
 	translate(0,-150)
 	tracciaFN(G, mx, my, res)
 	endShape()
 
 	// Traccia funzione H
 	beginShape()
-	stroke(0, 0, 255)
+	stroke(169, 255, 195)
 	translate(0,300)
 	tracciaFN(H, mx, my, res)
 	endShape()

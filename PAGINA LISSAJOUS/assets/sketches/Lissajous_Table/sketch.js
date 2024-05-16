@@ -3,7 +3,7 @@ function setup() {
   }
   
   function draw() {
-	background(0);
+	background(26, 26, 26);
 	translate(0, 0);
   
 	let w = 80;
