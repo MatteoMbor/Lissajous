@@ -13,6 +13,7 @@ function setup() {
 	slider_f1 = createSlider(-10, 10, 2, 0.1)
 	slider_f1.position(10, 10)
 	slider_f1.size(200)
+	
 
 	slider_f2 = createSlider(-10, 10, -3, 0.1)
 	slider_f2.position(10, 30)
@@ -34,6 +35,7 @@ function setup() {
 function G(x) {
 	//slider
 	const f1 = slider_f1.value()
+	
 	const am1 = slider_am1.value()
 	const sf = slider_sf.value()
 
