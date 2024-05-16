@@ -41,6 +41,11 @@ function G(x) {
 	return am1*sin(x * f1 - 0 * 0.0 + sf)
 }
 
+function sliderChange(){
+	//if the slider is changed, update the textbox
+	textBox.value(slider.value());
+  }
+
 function H(x) {
 	//slider
 	const f2 = slider_f2.value()
