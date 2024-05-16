@@ -35,7 +35,6 @@ function setup() {
 function G(x) {
 	//slider
 	const f1 = slider_f1.value()
-	
 	const am1 = slider_am1.value()
 	const sf = slider_sf.value()
 
@@ -52,7 +51,7 @@ function H(x) {
 
 
 function draw() {
-	background(26, 26, 26)
+	background(255)
 
 	// Disegno assi
 	stroke(200)
@@ -69,19 +68,19 @@ function draw() {
 	strokeWeight(2)
 	
 	// Traccia funzione parametrica (G, H)
-	stroke(118, 252, 255)
+	stroke(118, 200, 70)
 	tracciaFP(G, H, mx, my, res)
 
 	// Traccia funzione G
 	beginShape()
-	stroke(252, 185, 185)
+	stroke(118, 185, 185)
 	translate(0,-150)
 	tracciaFN(G, mx, my, res)
 	endShape()
 
 	// Traccia funzione H
 	beginShape()
-	stroke(169, 255, 195)
+	stroke(169, 118, 195)
 	translate(0,300)
 	tracciaFN(H, mx, my, res)
 	endShape()

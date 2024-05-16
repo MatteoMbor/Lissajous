@@ -3,7 +3,7 @@
 }
 
 body {
-	background-color: rgb(26, 26, 26); /* white, #FFFFFF */
+	background-color: rgb(255, 255, 255); /* white, #FFFFFF */
 	padding: 2em;
 	margin: 0;
 	font-family: "Inter", sans-serif;
@@ -14,19 +14,18 @@ body {
 }
 
 p {
-	color: white;
+	color: black;
 	margin: 0 0 1em 0;
-	max-width: 30em;
 }
 
 h1 {
-	color: white;
+	color: black;
 	margin: 0;
 	font-size: 3em;
 }
 
 h4 {
-	color: white;
+	color: black;
 	margin: 0;
 	font-size: 1em;
 
@@ -48,11 +47,11 @@ section {
 }
 
 .filetto {
-	border-top: solid 1px rgb(255, 255, 255);
+	border-top: solid 1px rgb(0, 0, 0);
 }
 
 .titolo-sezione {
-	color: white;
+	color: black;
 	margin-right: 1em;
 }
 
@@ -61,7 +60,7 @@ section {
 }
 
 ul {
-	color: white;
+	color: black;
 	margin: 0;
 	padding: 0;
 }

@@ -3,7 +3,7 @@ function setup() {
   }
   
   function draw() {
-	background(26, 26, 26);
+	background(255);
 	translate(0, 0);
   
 	let w = 80;
@@ -32,7 +32,7 @@ function setup() {
 	let r = rw * 0.45;
   
 	noFill();
-	stroke(255);
+	stroke(0);
 	beginShape();
 	for (let i = 0; i < steps + 1; i++) {
 	  let t = TWO_PI / steps * i * percentuale;
