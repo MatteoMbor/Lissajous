@@ -8,28 +8,36 @@ let slider_sf
 
 
 function setup() {
-	createCanvas(windowWidth, windowHeight)
+	createCanvas(500, 500)
 
 	slider_f1 = createSlider(-10, 10, 2, 0.1)
 	slider_f1.position(10, 10)
 	slider_f1.size(200)
+	slider_f1.addClass("mySliders")
 	
 
 	slider_f2 = createSlider(-10, 10, -3, 0.1)
 	slider_f2.position(10, 30)
 	slider_f2.size(200)
+	slider_f2.addClass("mySliders")
+
 
 	slider_am1 = createSlider(-3, 3, 1, 0.1)
 	slider_am1.position(width-200, 10)
 	slider_am1.size(200)
-	
+	slider_am1.addClass("mySliders")
+
 	slider_am2 = createSlider(-3, 3, 1, 0.1)
 	slider_am2.position(width-200, 30)
 	slider_am2.size(200)
+	slider_am2.addClass("mySliders")
+
 	
 	slider_sf = createSlider(-10, 10, 0, 0.1)
 	slider_sf.position(width/2-100, height-20)
 	slider_sf.size(200)
+	slider_sf.addClass("mySliders")
+
 }
 
 function G(x) {
@@ -56,7 +64,7 @@ function H(x) {
 
 
 function draw() {
-	background(255)
+	background(12)
 
 	// Disegno assi
 	stroke(200)

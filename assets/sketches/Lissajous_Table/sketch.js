@@ -1,9 +1,10 @@
 function setup() {
-	createCanvas(windowWidth, windowHeight);
+	createCanvas(500, 500);
   }
   
   function draw() {
-	background(255);
+	scale(0.65)
+	background(12);
 	translate(0, 0);
   
 	let w = 80;
@@ -32,7 +33,7 @@ function setup() {
 	let r = rw * 0.45;
   
 	noFill();
-	stroke(0);
+	stroke(255);
 	beginShape();
 	for (let i = 0; i < steps + 1; i++) {
 	  let t = TWO_PI / steps * i * percentuale;
@@ -42,7 +43,7 @@ function setup() {
 	}
 	endShape();
   
-	stroke(60);
+	stroke(60, 50);
 	rect(rx, ry, rw, rw);
   }
   
