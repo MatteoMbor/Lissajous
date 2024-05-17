@@ -27,21 +27,34 @@ h1 {
 h4 {
 	color: black;
 	margin: 0;
-	font-size: 1em;
+	font-size: 1.5em;
 
+}
+
+h5 {
+	color: black;
+	margin: 0;
+	font-size: 1.25em;
 }
 
 iframe {
 	margin: 0;
 	display: block;
 	border: none;
-	width: 100%;
+	text-align: center;
 }
 
 header,
 section {
 	display: grid;
-	grid-template-columns: 1fr 4fr;
+	grid-template-columns: 0.75fr 4fr;
+	margin-bottom: 2em;
+	padding-top: 0.25em;
+}
+
+section2 {
+	display: grid;
+	grid-template-columns: 0.75fr 2fr 2fr;
 	margin-bottom: 2em;
 	padding-top: 0.25em;
 }
