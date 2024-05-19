@@ -4,10 +4,10 @@ let textBox_f1, textBox_f2, textBox_am1, textBox_am2, textBox_sf;
 function setup() {
     createCanvas(500, 500);
 
-    slider_f1 = createSlider(-10, 10, 2, 0.1).position(10, 10).size(150).addClass("mySliders");
+    slider_f1 = createSlider(-10, 10, 1, 0.1).position(10, 10).size(150).addClass("mySliders");
     slider_f1.input(updateTextBoxes);
 
-    slider_f2 = createSlider(-10, 10, 2, 0.1).position(10, 30).size(150).addClass("mySliders");
+    slider_f2 = createSlider(-10, 10, 1, 0.1).position(10, 30).size(150).addClass("mySliders");
     slider_f2.input(updateTextBoxes);
 
     slider_am1 = createSlider(-3, 3, 1, 0.1).position(width - 160, 10).size(150).addClass("mySliders");
