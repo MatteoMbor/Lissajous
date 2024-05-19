@@ -16,7 +16,7 @@ function setup() {
     slider_am2 = createSlider(-3, 3, 1, 0.1).position(width - 160, 30).size(150).addClass("mySliders");
     slider_am2.input(updateTextBoxes);
 
-    slider_sf = createSlider(-10, 10, 1.6, 0.1).position(width / 2 - 77, height - 20).size(150).addClass("mySliders");
+    slider_sf = createSlider(-10, 10, 0, 0.1).position(width / 2 - 77, height - 20).size(150).addClass("mySliders");
     slider_sf.input(updateTextBoxes);
 
     textBox_f1 = createInput(slider_f1.value()).position(170, 5).size(20);
