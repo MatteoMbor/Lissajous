@@ -1,103 +1,179 @@
-*, *:before, *:after {
-	box-sizing: border-box;
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
 }
 
 body {
-	background-color: rgb(12, 12, 12); /* white, #FFFFFF */
-	padding: 2em;
-	margin: 0;
-	font-family: "Inter", sans-serif;
-	font-optical-sizing: auto;
-	font-weight: 400;
-	font-style: normal;
-	font-variation-settings: "slnt" 0;
+    background-color: rgb(12, 12, 12);
+    padding: 2em;
+    margin: 0;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings: "slnt" 0;
+}
+
+a {
+    color: rgb(118, 185, 185);
+    text-decoration: none;
+    transition: all 1s;
+}
+
+a:visited {
+    color: rgb(169, 118, 195);
+}
+
+a:hover {
+    text-decoration: underline;
+    color: rgb(118, 200, 7);
+    margin-left: 1em;
 }
 
 p {
-	color: rgb(255, 255, 255);
-	margin: 0 0 1em 0;
+    color: rgb(255, 255, 255);
+    margin: 0 0 1em 0;
 }
 
 h1 {
-	color: rgb(255, 255, 255);
-	margin: 0;
-	font-size: 3em;
+    color: rgb(255, 255, 255);
+    margin: 0;
+    font-size: 3em;
 }
 
 h4 {
-	color: rgb(255, 255, 255);
-	margin: 0;
-	font-size: 1.5em;
-
+    color: rgb(255, 255, 255);
+    margin: 0;
+    font-size: 1.5em;
 }
 
 h5 {
-	color: rgb(255, 255, 255);
-	margin: 0;
-	font-size: 1.25em;
+    color: rgb(255, 255, 255);
+    margin: 0;
+    font-size: 1.25em;
 }
 
 iframe {
-	margin: 0;
-	display: block;
-	border: none;
-	text-align: center;
+    margin: 0;
+    display: block;
+    border: none;
+    text-align: center;
+    outline: none;
 }
 
+/* Stile per le sezioni */
+.section-container {
+    background-color: rgba(211, 211, 211, 0.062); /* Colore grigio chiaro con trasparenza */
+    padding: 1em; /* Margine interno di 1em */
+    margin-bottom: 2em; /* Margine inferiore tra le sezioni */
+}
+
+/* Rimuovi la formattazione del filetto */
+.section-container .filetto {
+    border: none;
+    padding: 0;
+}
+
+/* Centrare il titolo */
+.section-container h4.titolo-sezione {
+    text-align: center;
+}
+
+/* Stile per le colonne all'interno delle sezioni */
+.section-container section,
+.section-container section2 {
+    display: flex; /* Utilizza il layout flessibile */
+    flex-direction: column; /* Colonne */
+    gap: 1em; /* Spazio tra gli elementi */
+}
+
+/* Stile per le colonne specifiche di section2 */
+.section-container section2 {
+    grid-template-columns: 1fr 2fr 2fr; /* Mantieni le colonne esistenti di section2 */
+}
+
+
+/* Distanza tra le colonne */
 header,
 section {
-	display: grid;
-	grid-template-columns: 0.75fr 4fr;
-	margin-bottom: 2em;
-	padding-top: 0.25em;
+    display: grid;
+    grid-template-columns: 0.75fr 4fr;
+    margin-bottom: 2em;
+    padding-top: 0.25em;
+    gap: 1em;
 }
 
+/* Distanza tra le colonne in section2 */
 section2 {
-	display: grid;
-	grid-template-columns: 0.75fr 2fr 2fr;
-	margin-bottom: 2em;
-	padding-top: 0.25em;
+    display: grid;
+    grid-template-columns: 0.75fr 2fr 2fr;
+    margin-bottom: 2em;
+    padding-top: 0.25em;
+    gap: 1em;
 }
 
-.filetto {
-	border-top: solid 1px rgb(255, 255, 255);
-	padding-bottom: 2em;
+/* Stile per il pannello grigio chiaro */
+section {
+    background-color: hwb(0 100% 0% / 0.034);
+    padding: 1em;
+    border-radius: 0.5em;
+}
+
+/* Centraggio delle GIF */
+iframe[src*="gif"] {
+    margin: 0 auto;
 }
 
 .titolo-sezione {
-	color: rgb(255, 255, 255);
-	margin-right: 1em;
+    color: rgb(255, 255, 255);
+    margin-right: 1em;
 }
 
 .contenitore {
-	 width: 100%; 
+    width: 100%;
 }
 
 ul {
-	color: rgb(255, 255, 255);
-	margin: 0;
-	padding: 0;
+    color: rgb(255, 255, 255);
+    margin: 0;
+    padding: 0;
 }
 
-
+.centrato-responsivo {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+    border: none;
+    text-align: center;
+}
 
 /* -- breakpoint: schermi piccoli, larghezza massima 500 pixel -- */
-
 @media only screen and (max-width: 600px) {
-	header,
-	section {
-		grid-template-columns: 1fr;
-	}
-	.contenitore {
-		width:100%;
-	}
-	.contenuto-sezione {
-		width: 100%;
-	}
-	.titolo-sezione {
-		width: 100%;
-	}
-	img {
-		width: 100%;
-	}
+
+    header,
+    section {
+        grid-template-columns: 1fr;
+    }
+
+    section2 {
+        grid-template-columns: 1fr;
+    }
+
+    .contenitore {
+        width: 100%;
+    }
+
+    .contenuto-sezione {
+        width: 100%;
+    }
+
+    .titolo-sezione {
+        width: 100%;
+    }
+
+    img {
+        width: 100%;
+    }
 }
